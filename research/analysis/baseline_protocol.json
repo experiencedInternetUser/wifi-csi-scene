@@ -1,0 +1,101 @@
+{
+  "features": [
+    "cv",
+    "ndiff",
+    "relative_std",
+    "band_1_15",
+    "band_fraction",
+    "entropy",
+    "acf_100ms"
+  ],
+  "train_files": [
+    "3DO/d1/b1/csiposreg.csv",
+    "3DO/d1/l1/csiposreg.csv",
+    "3DO/d1/l2/csiposreg.csv",
+    "3DO/d1/l3/csiposreg.csv",
+    "3DO/d1/s1/csiposreg.csv",
+    "3DO/d1/s2/csiposreg.csv",
+    "3DO/d1/s3/csiposreg.csv",
+    "3DO/d1/w1/csiposreg.csv",
+    "3DO/d1/w2/csiposreg.csv",
+    "3DO/d1/w3/csiposreg.csv"
+  ],
+  "validation_files": [
+    "3DO/d1/b2/csiposreg.csv",
+    "3DO/d1/l4/csiposreg.csv",
+    "3DO/d1/s4/csiposreg.csv",
+    "3DO/d1/w4/csiposreg.csv"
+  ],
+  "test_files": [
+    "3DO/d1/b3/csiposreg.csv",
+    "3DO/d1/l5/csiposreg.csv",
+    "3DO/d1/s5/csiposreg.csv",
+    "3DO/d1/w5/csiposreg.csv",
+    "3DO/d2/b1/csiposreg.csv",
+    "3DO/d2/b2/csiposreg.csv",
+    "3DO/d2/b3/csiposreg.csv",
+    "3DO/d2/l1/csiposreg.csv",
+    "3DO/d2/l2/csiposreg.csv",
+    "3DO/d2/l3/csiposreg.csv",
+    "3DO/d2/l4/csiposreg.csv",
+    "3DO/d2/l5/csiposreg.csv",
+    "3DO/d2/s1/csiposreg.csv",
+    "3DO/d2/s2/csiposreg.csv",
+    "3DO/d2/s3/csiposreg.csv",
+    "3DO/d2/s4/csiposreg.csv",
+    "3DO/d2/s5/csiposreg.csv",
+    "3DO/d2/w1/csiposreg.csv",
+    "3DO/d2/w2/csiposreg.csv",
+    "3DO/d2/w3/csiposreg.csv",
+    "3DO/d2/w4/csiposreg.csv",
+    "3DO/d2/w5/csiposreg.csv",
+    "3DO/d3/b1/csiposreg.csv",
+    "3DO/d3/b2/csiposreg.csv",
+    "3DO/d3/b3/csiposreg.csv",
+    "3DO/d3/l1/csiposreg.csv",
+    "3DO/d3/l2/csiposreg.csv",
+    "3DO/d3/l4/csiposreg.csv",
+    "3DO/d3/s1/csiposreg.csv",
+    "3DO/d3/s2/csiposreg.csv",
+    "3DO/d3/s3/csiposreg.csv",
+    "3DO/d3/s4/csiposreg.csv",
+    "3DO/d3/s5/csiposreg.csv",
+    "3DO/d3/w1/csiposreg.csv",
+    "3DO/d3/w2/csiposreg.csv",
+    "3DO/d3/w4/csiposreg.csv",
+    "3DO/d3/w5/csiposreg.csv"
+  ],
+  "train_windows": 568,
+  "val_windows": 276,
+  "threshold": 0.5399999999999999,
+  "scaler_mean": [
+    0.06971695243945004,
+    0.06121206187157774,
+    0.07448188138758423,
+    0.0031667944561082602,
+    0.30773057919782654,
+    0.8178164215535039,
+    0.16414675234163567
+  ],
+  "scaler_scale": [
+    0.04522899410916758,
+    0.008801038558359515,
+    0.05000413201807794,
+    0.006947524680818714,
+    0.17732149259970098,
+    0.09747757527680044,
+    0.27101517389320745
+  ],
+  "coefficient": [
+    3.3517849368017734,
+    1.3653282250879644,
+    4.045087206249531,
+    0.4347947989969183,
+    0.7873971499960263,
+    1.6477529626306817,
+    0.5808015928519847
+  ],
+  "intercept": [
+    3.3563092730951247
+  ]
+}

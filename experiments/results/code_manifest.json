@@ -1,0 +1,16 @@
+{
+  "format_version": 1,
+  "description": "Код после объединения папок экспериментов. Исходные хеши времени обучения сохранены в плане и весах.",
+  "training_runtime_hashes": {
+    "train_grid.py": "6ff226ee0d0d6114e818c816fdea75417a36cd8e918b27a9e96a7e4bea9c9399",
+    "models.py": "11fc2e74485b7085afeff6f4852ef70df41bf8b818b047218b76e70d43b5fa08"
+  },
+  "files": {
+    "models.py": "638ffc12896828142a4ec82d158390d36c91b0265cd545531d9b4aa2d64c3be9",
+    "prepare.py": "a890d7bd658e1205773ed436b8641ecd9a2a0a11635c7a438d57e9bc2503eab7",
+    "train_grid.py": "caac362f1dcd8317197bccedafe97f6a4dd4ebc4a4e3164e448a791fa2d61de7",
+    "resume.py": "ab808753d575a44f9deb0922896a9b18d82799459470367ae50cacd350e5dc98",
+    "validate.py": "738484228cb2babb147627599754ea884094c8f13e4650a0ace2e45a69dafbd0",
+    "report.py": "cfecfb76011274b091a9a63b82c8bd8424e91b79a2f5f4994676070f8be50555"
+  }
+}

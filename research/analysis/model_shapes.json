@@ -1,0 +1,62 @@
+{
+  "torch": "2.5.1+cu121",
+  "models": [
+    {
+      "model": "TinyCNN",
+      "parameters": 26849,
+      "input": [
+        2,
+        1,
+        52,
+        400
+      ],
+      "output": [
+        2,
+        1
+      ],
+      "trained": false
+    },
+    {
+      "model": "MotionTCN",
+      "parameters": 46081,
+      "input": [
+        2,
+        52,
+        400
+      ],
+      "output": [
+        2,
+        1
+      ],
+      "trained": false
+    },
+    {
+      "model": "CNNGRU",
+      "parameters": 43681,
+      "input": [
+        2,
+        52,
+        400
+      ],
+      "output": [
+        2,
+        1
+      ],
+      "trained": false
+    },
+    {
+      "model": "TinyTransformer",
+      "parameters": 96897,
+      "input": [
+        2,
+        52,
+        400
+      ],
+      "output": [
+        2,
+        1
+      ],
+      "trained": false
+    }
+  ]
+}

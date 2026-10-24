@@ -1,0 +1,96 @@
+[
+  {
+    "archive": "3DO.zip",
+    "bytes": 435217412,
+    "files": 105,
+    "uncompressed_bytes": 2528986685,
+    "extensions": {
+      ".csv": 54,
+      ".npy": 51
+    },
+    "example": "3DO/d1/b1/csi.csv"
+  },
+  {
+    "archive": "NTU-Fi-HumanID.zip",
+    "bytes": 2817627776,
+    "files": 840,
+    "uncompressed_bytes": 4596641280,
+    "extensions": {
+      ".mat": 840
+    },
+    "example": "NTU-Fi-HumanID/test_amp/002/a4.mat",
+    "arrays": {
+      "CSIamp": {
+        "shape": [
+          342,
+          2000
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  {
+    "archive": "NTU-Fi_HAR.zip",
+    "bytes": 4740430217,
+    "files": 1200,
+    "uncompressed_bytes": 6566630400,
+    "extensions": {
+      ".mat": 1200
+    },
+    "example": "NTU-Fi_HAR/train_amp/fall/fall67.mat",
+    "arrays": {
+      "CSIamp": {
+        "shape": [
+          342,
+          2000
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  {
+    "archive": "UT_HAR.zip",
+    "bytes": 383128602,
+    "files": 6,
+    "uncompressed_bytes": 895180552,
+    "extensions": {
+      ".csv": 6
+    },
+    "example": "UT_HAR/data/X_train.csv",
+    "shape": [
+      3977,
+      250,
+      90
+    ],
+    "dtype": "float64",
+    "format": "NPY, not CSV"
+  },
+  {
+    "archive": "wallhack1.8k.zip",
+    "bytes": 135133863,
+    "files": 1883,
+    "uncompressed_bytes": 640305038,
+    "extensions": {
+      ".csv": 60,
+      ".png": 1822,
+      ".txt": 1
+    },
+    "example": "wallhack1.8k/LOS/BQ/b1.csv"
+  },
+  {
+    "archive": "Widardata.zip",
+    "bytes": 1143833206,
+    "files": 43652,
+    "uncompressed_bytes": 9603467633,
+    "extensions": {
+      ".csv": 43652
+    },
+    "example": "Widardata/test/10-Draw-Zigzag(V)/user1-5-1-1-13-1-1e-07-100-20-100000-L0.csv",
+    "shape": [
+      22,
+      400
+    ],
+    "dtype": "float64",
+    "format": "BVP CSV; reshape explicitly, not raw CSI"
+  }
+]

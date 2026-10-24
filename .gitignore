@@ -1,3 +1,21 @@
-.venv
+# Исходные архивы датасетов загружаются отдельно.
+/datasets/
 
-data
+# Окружение Python и временные файлы.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+/tmp/
+/.local-archive/
+*.tmp
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Тяжёлые массивы и веса остаются только локально.
+/experiments/results/*.npy
+/experiments/results/checkpoints/

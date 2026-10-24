@@ -1,0 +1,24 @@
+{
+  "state": "passed",
+  "fits": 256,
+  "metric_rows_recomputed": 656,
+  "checkpoints_checked": 256,
+  "scalers_independently_checked": 64,
+  "max_scaler_absolute_error": 4.938552078392888e-07,
+  "recordings": 67,
+  "windows": 3045,
+  "recording_splits_disjoint": true,
+  "domain_splits_disjoint": true,
+  "windows_nonoverlapping": true,
+  "binary_labels_verified": true,
+  "source_only_scalers_verified": true,
+  "runtime_hashes_verified": true,
+  "checkpoint_weights_finite": true,
+  "predictions_match_original_window_indices": true,
+  "restored_model_inference_max_absolute_probability_errors": {
+    "tinycnn": 0.0,
+    "tcn": 0.0,
+    "cnngru": 0.0,
+    "transformer": 0.0
+  }
+}

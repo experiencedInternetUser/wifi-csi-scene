@@ -1,0 +1,17 @@
+{
+  "recordings": 95,
+  "raw_packets": 2534599,
+  "valid_packets": 2534595,
+  "windows": 4878,
+  "figures": 12,
+  "uint32_wraps": 7,
+  "excluded_damaged": 4,
+  "split_files_disjoint": true,
+  "window_overlap": false,
+  "features_finite": true,
+  "binary_target_verified": true,
+  "python_syntax": "passed",
+  "markdown_local_links": "passed",
+  "four_model_forward_shapes": "passed",
+  "TCN_causality": "passed"
+}
