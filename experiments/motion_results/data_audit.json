@@ -1,0 +1,74 @@
+{
+  "state": "passed",
+  "recordings": 67,
+  "windows": 3052,
+  "raw_packets": 1569769,
+  "valid_packets": 1569765,
+  "discarded_packets": 4,
+  "wraps": 6,
+  "maximum_amplitude_error": 3.814697265625e-06,
+  "amplitude_sha256": "8e62b68523e4d832505ab2795dd5459778d7a02cc90e184637ff533198276aab",
+  "windows_sha256": "eaf32bbf1be73f7baa9f196f2bd05ff4785630c799119df88eab43f0c7ab2ac1",
+  "archive_sha256": {
+    "wallhack1.8k.zip": "68ab4888ae9b5eb2752e88a43aa1394349800a66e33c8aa1a469737bb2d5f9ca",
+    "3DO.zip": "bc667b9695783f2bc1f6d996422ec6578307dff5888e9444cc2f4d9d64cdf188"
+  },
+  "archive_inventory": [
+    {
+      "archive": "3DO.zip",
+      "bytes": 435217412,
+      "files": 105,
+      "extensions": {
+        ".csv": 54,
+        ".npy": 51
+      }
+    },
+    {
+      "archive": "NTU-Fi-HumanID.zip",
+      "bytes": 2817627776,
+      "files": 840,
+      "extensions": {
+        ".mat": 840
+      }
+    },
+    {
+      "archive": "NTU-Fi_HAR.zip",
+      "bytes": 4740430217,
+      "files": 1200,
+      "extensions": {
+        ".mat": 1200
+      }
+    },
+    {
+      "archive": "UT_HAR.zip",
+      "bytes": 383128602,
+      "files": 6,
+      "extensions": {
+        ".csv": 6
+      }
+    },
+    {
+      "archive": "wallhack1.8k.zip",
+      "bytes": 135133863,
+      "files": 1883,
+      "extensions": {
+        ".png": 1822,
+        ".csv": 60,
+        ".txt": 1
+      }
+    },
+    {
+      "archive": "Widardata.zip",
+      "bytes": 1143833206,
+      "files": 43652,
+      "extensions": {
+        ".csv": 43652
+      }
+    }
+  ],
+  "all_windows_reconstructed": true,
+  "nonoverlapping": true,
+  "labels_verified": true,
+  "materials": 30,
+  "windows_crlf_serialization_sha256": "5c23068f01727247c6d4124513866048d776ed580b5afc5c32ee661c6e98f33e"
+}

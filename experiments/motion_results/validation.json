@@ -1,0 +1,37 @@
+{
+  "state": "passed",
+  "checkpoints_replayed": 136,
+  "metric_rows_recomputed": 176,
+  "all_train_only_scalers_exact": true,
+  "max_gpu_probability_error": 0.0,
+  "deployment_cpu_probability_error": 6.377696990966797e-06,
+  "deployment_cpu_decisions_equal": true,
+  "recordings": 67,
+  "windows": 3052,
+  "windows_nonoverlapping": true,
+  "recording_splits_disjoint": true,
+  "selection_recomputed": true,
+  "latency": {
+    "cpu": {
+      "p50_ms": 10.51759999973001,
+      "p95_ms": 11.385230001906166,
+      "repeats": 100,
+      "warmup": 20,
+      "threads": 1,
+      "batch": 1,
+      "includes": "preprocessing, scaling, model, sigmoid and host-device copies; excludes I/Q parsing, resampling, disk and 4s acquisition"
+    },
+    "cuda": {
+      "p50_ms": 8.465400000204681,
+      "p95_ms": 10.478794999835372,
+      "repeats": 100,
+      "warmup": 20,
+      "threads": 1,
+      "batch": 1,
+      "includes": "preprocessing, scaling, model, sigmoid and host-device copies; excludes I/Q parsing, resampling, disk and 4s acquisition"
+    }
+  },
+  "deployment_file_bytes": 210722,
+  "deployment_tensor_bytes": 184324,
+  "deployment_sha256": "c90de68eeabb6661c7eb956da5ea3371bdb5aa85b2be909fee8e93f1e5f09e6e"
+}

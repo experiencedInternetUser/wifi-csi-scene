@@ -1,0 +1,10 @@
+{
+  "feature_windows": 3052,
+  "psd_method": "Welch on relative amplitude; Hann, nperseg200, noverlap100, fs100, mean over52 channels",
+  "interpretation": "Amplitude fluctuation spectrum, not a signed Doppler/velocity estimate",
+  "nn_mac_per_window": {
+    "cnngru": 5145664,
+    "tcn": 17868832
+  },
+  "mac_scope": "Conv1d, GRU input/recurrent matrices, Linear; excludes norm, activation, bias, filtering and memory transfers"
+}

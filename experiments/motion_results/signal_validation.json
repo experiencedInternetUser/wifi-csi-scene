@@ -1,0 +1,13 @@
+{
+  "state": "passed",
+  "preprocessors": 7,
+  "maximum_constant_residual": 1.7763568394002505e-15,
+  "batch_vs_single_window_error": 0.0,
+  "cutoff_amplitude_gains": {
+    "lp10_centered": 0.7071068654802449,
+    "lp20_centered": 0.7071068654802458
+  },
+  "expected_cutoff_gain": 0.7071067811865476,
+  "isolated_spike_removed": true,
+  "invalid_inputs_rejected": 3
+}

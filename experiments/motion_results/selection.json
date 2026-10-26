@@ -1,0 +1,11 @@
+{
+  "architecture": "tcn",
+  "preprocessing": "hampel_lp20",
+  "mean_cv_balanced_accuracy": 0.9219304479942778,
+  "best_mean_cv_balanced_accuracy": 0.9219304479942778,
+  "cpu_p50_ms": 10.685299999749986,
+  "parameters": 46081,
+  "deployment_seed": 42,
+  "rule": "mean balanced accuracy of 3 domain folds x 3 seeds; within 0.005 of best: lowest CPU p50, then parameters",
+  "cv_fits": 126
+}

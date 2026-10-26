@@ -1,0 +1,26 @@
+{
+  "repeats": 5000,
+  "seed": 42,
+  "method": "stratified by day and target, resample whole recordings",
+  "scope": "conditional on recorded days and actor; cannot bound unseen-domain error",
+  "recordings": 23,
+  "intervals": {
+    "balanced_accuracy": {
+      "lower": 0.9974747474747474,
+      "upper": 1.0
+    },
+    "recall": {
+      "lower": 0.9949494949494949,
+      "upper": 1.0
+    },
+    "specificity": {
+      "lower": 1.0,
+      "upper": 1.0
+    },
+    "f1": {
+      "lower": 0.9974683544303797,
+      "upper": 1.0
+    }
+  },
+  "degenerate": false
+}

@@ -16,6 +16,9 @@ __pycache__/
 Thumbs.db
 .DS_Store
 
-# Тяжёлые массивы и веса остаются только локально.
+# Тяжёлые массивы и веса исходной сетки остаются только локально.
 /experiments/results/*.npy
 /experiments/results/checkpoints/
+
+# Восстанавливаемый кэш нового эксперимента; веса и метрики добавляются в Git.
+/experiments/motion_results/amplitudes.npy
