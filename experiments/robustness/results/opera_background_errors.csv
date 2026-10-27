@@ -1,0 +1,3 @@
+recording,experiment,receiver,start_s,end_s,probability
+wificsi1_exp055.mat,exp_055,wificsi1,377.0,380.99,0.99984217
+wificsi2_exp055.mat,exp_055,wificsi2,377.0,380.99,0.9998586

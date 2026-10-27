@@ -1,0 +1,6 @@
+name,cpu_p50_ms,cpu_p95_ms,parameters,classifier_bytes,pt_bytes,threads,batch,repeats,input_shape,device,cpu,includes
+tcn,4.391500006022397,4.959089997282717,46081,173965,211578.0,1,1,50,"1,52,400",CPU,"Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",window preprocessing + trained projection + features + classifier; loaded model; no disk/parsing/resampling
+logreg_scaled,1.8425500020384789,2.1389350018580444,8,1516,,1,1,50,"1,52,400",CPU,"Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",window preprocessing + trained projection + features + classifier; loaded model; no disk/parsing/resampling
+logreg_pca8,1.7312500058324076,1.9879949977621436,8,4149,,1,1,50,"1,52,400",CPU,"Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",window preprocessing + trained projection + features + classifier; loaded model; no disk/parsing/resampling
+tcn_pca16,4.7414500077138655,5.368439992162166,44929,173132,206680.0,1,1,50,"1,52,400",CPU,"Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",window preprocessing + trained projection + features + classifier; loaded model; no disk/parsing/resampling
+threshold_abs,1.3390999956754968,1.6577149996010119,1,550,,1,1,50,"1,52,400",CPU,"Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",window preprocessing + trained projection + features + classifier; loaded model; no disk/parsing/resampling

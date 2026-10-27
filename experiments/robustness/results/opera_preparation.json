@@ -1,0 +1,12 @@
+{
+  "shape": [
+    1026,
+    52,
+    400
+  ],
+  "cap_per_recording_class": 24,
+  "task": "background vs walk; noactivity excluded",
+  "recordings": 103,
+  "adapter": "ordinal half-spectrum 30-to-52 interpolation; bandwidth assumption explicitly unverified",
+  "cache_sha256": "237b52abb887f7a069ce87b6fa3c31c109b762af6f441a9841a0528bd05f97f0"
+}

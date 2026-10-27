@@ -1,0 +1,15 @@
+{
+  "classic": "logreg_scaled",
+  "lightweight_pca": "logreg_pca8",
+  "tcn_pca": "tcn_pca16",
+  "finalists": [
+    "tcn",
+    "logreg_scaled",
+    "logreg_pca8",
+    "tcn_pca16",
+    "threshold_abs"
+  ],
+  "selection": "highest mean development-domain BA; PCA candidates kept for ablation; no target-domain tuning",
+  "source_commit": "70921001ece6ec831a24695697feccf483f0a510",
+  "baseline_commit": "d177c4638a72b0326b14f536764c9bf9b2f89aab"
+}

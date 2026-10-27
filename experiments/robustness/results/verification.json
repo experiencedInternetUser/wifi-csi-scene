@@ -1,0 +1,47 @@
+{
+  "binary_parser": [
+    {
+      "payload_bytes": 0,
+      "max_amplitude_error": 2.8545323743855988e-05
+    },
+    {
+      "payload_bytes": 44,
+      "max_amplitude_error": 2.8545323743855988e-05
+    }
+  ],
+  "features": {
+    "windows": 12,
+    "max_feature_error": 1.2344748467896238e-07,
+    "pca_orthogonality_error": 1.7881393432617188e-07
+  },
+  "days": {
+    "windows": 4944,
+    "recordings": 206,
+    "shape": [
+      4944,
+      52,
+      400
+    ],
+    "nonoverlap": true
+  },
+  "opera": {
+    "windows": 1026,
+    "recordings": 43,
+    "shape": [
+      1026,
+      52,
+      400
+    ],
+    "nonoverlap": true
+  },
+  "opera_group_disjoint": true,
+  "reload_probability_errors": {
+    "opera_room1__logreg_pca8__s42": 8.819984673169579e-17,
+    "opera_room1__logreg_scaled__s42": 8.966351966455122e-17,
+    "opera_room1__tcn__s42": 7.155069722472596e-12,
+    "opera_room1__tcn_pca16__s42": 2.8284990777512065e-11,
+    "opera_room1__threshold_abs__s42": 2.7755575615628914e-17
+  },
+  "checked_checkpoints": 90,
+  "original_deployment_probability_error": 0.0
+}

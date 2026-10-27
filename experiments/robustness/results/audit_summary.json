@@ -1,0 +1,34 @@
+{
+  "days_archives": 21,
+  "days_recordings": 245,
+  "days_frames": 9740769,
+  "days_selected_valid_packets": 9731320,
+  "days_zero_byte_records": [
+    "day13/mixed3.data"
+  ],
+  "days_mixed_records": 39,
+  "days_bad_header_resync_steps": 0,
+  "opera_files": 103,
+  "opera_rows": 82897724,
+  "opera_csi_columns": [
+    270
+  ],
+  "opera_selected_records": 43,
+  "opera_person_id_labels": [
+    "All Six People",
+    "Five",
+    "Four",
+    "One",
+    "Seven",
+    "Six",
+    "Three",
+    "Two",
+    "nan"
+  ],
+  "opera_duplicate_ms": 32477255,
+  "notes": [
+    "MAT tables have no packet bandwidth flags",
+    "Published six participants vs seven distinct individual person_id strings: identities not merged",
+    "Room2 changes both environment and participant composition"
+  ]
+}

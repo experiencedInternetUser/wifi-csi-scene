@@ -1,0 +1,8 @@
+dataset,domain,recordings,experiments,negative,positive,background_recordings,positive_recordings
+days,Apartment,34,34,48,768,2,32
+days,LabI,36,36,432,432,18,18
+days,LabII,136,136,960,2304,40,96
+opera,Room1/wificsi1,14,14,48,285,2,12
+opera,Room1/wificsi2,15,15,72,285,3,12
+opera,Room2/wificsi1,7,7,24,144,1,6
+opera,Room2/wificsi2,7,7,24,144,1,6

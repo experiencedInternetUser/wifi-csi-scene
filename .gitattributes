@@ -1,3 +1,9 @@
 # Единые окончания строк сохраняют контрольные суммы кода при клонировании.
 * text=auto eol=lf
 
+# Снимок исходников и материалы с SHA-256 сохраняются побайтно.
+baseline/** -text -whitespace
+experiments/robustness/** -text whitespace=cr-at-eol
+experiments/robustness/sources/** -whitespace
+research/robustness_report.md -text whitespace=cr-at-eol
+

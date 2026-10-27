@@ -1,0 +1,285 @@
+{
+  "day1": {
+    "actual": {
+      "empty": 6,
+      "mixed": 2,
+      "motion": 6
+    },
+    "expected": {
+      "mixed": 2,
+      "motion": 6,
+      "empty": 6
+    },
+    "counts_match": true
+  },
+  "day10": {
+    "actual": {
+      "empty": 4,
+      "mixed": 4,
+      "motion": 8
+    },
+    "expected": {
+      "mixed": 4,
+      "empty": 4,
+      "motion": 8
+    },
+    "counts_match": true
+  },
+  "day11": {
+    "actual": {
+      "empty": 4,
+      "mixed": 2,
+      "motion": 8
+    },
+    "expected": {
+      "mixed": 2,
+      "empty": 4,
+      "motion": 8
+    },
+    "counts_match": true
+  },
+  "day12": {
+    "actual": {
+      "empty": 4,
+      "mixed": 2,
+      "motion": 8
+    },
+    "expected": {
+      "mixed": 2,
+      "empty": 4,
+      "motion": 8
+    },
+    "counts_match": true
+  },
+  "day13": {
+    "actual": {
+      "empty": 4,
+      "mixed": 4,
+      "motion": 8
+    },
+    "expected": {
+      "mixed": 4,
+      "motion": 8,
+      "empty": 4
+    },
+    "counts_match": true
+  },
+  "day14": {
+    "actual": {
+      "empty": 4,
+      "mixed": 2,
+      "motion": 8
+    },
+    "expected": {
+      "mixed": 2,
+      "empty": 4,
+      "motion": 8
+    },
+    "counts_match": true
+  },
+  "day15": {
+    "actual": {
+      "empty": 4,
+      "mixed": 4,
+      "motion": 8
+    },
+    "expected": {
+      "mixed": 4,
+      "empty": 4,
+      "motion": 8
+    },
+    "counts_match": true
+  },
+  "day16": {
+    "actual": {
+      "empty": 4,
+      "mixed": 4,
+      "motion": 8
+    },
+    "expected": {
+      "mixed": 4,
+      "empty": 4,
+      "motion": 8
+    },
+    "counts_match": true
+  },
+  "day2": {
+    "actual": {
+      "empty": 6,
+      "mixed": 2,
+      "motion": 6
+    },
+    "expected": {
+      "mixed": 2,
+      "motion": 6,
+      "empty": 6
+    },
+    "counts_match": true
+  },
+  "day20": {
+    "actual": {
+      "bedroomI": 2,
+      "bedroomII": 2,
+      "kitchen": 2,
+      "living_room": 2
+    },
+    "expected": {
+      "mixed": 0,
+      "living_room": 2,
+      "kitchen": 2,
+      "bedroomI": 2,
+      "bedroomII": 2
+    },
+    "counts_match": true
+  },
+  "day21": {
+    "actual": {
+      "empty": 1
+    },
+    "expected": {
+      "mixed": 0,
+      "empty": 1
+    },
+    "counts_match": true
+  },
+  "day22": {
+    "actual": {
+      "bedroomI": 2,
+      "bedroomII": 2,
+      "kitchen": 2,
+      "living_room": 2
+    },
+    "expected": {
+      "mixed": 0,
+      "living_room": 2,
+      "kitchen": 2,
+      "bedroomI": 2,
+      "bedroomII": 2
+    },
+    "counts_match": true
+  },
+  "day23": {
+    "actual": {
+      "bedroomI": 2,
+      "bedroomII": 2,
+      "kitchen": 2,
+      "living_room": 2
+    },
+    "expected": {
+      "mixed": 0,
+      "living_room": 2,
+      "kitchen": 2,
+      "bedroomI": 2,
+      "bedroomII": 2
+    },
+    "counts_match": true
+  },
+  "day24": {
+    "actual": {
+      "bedroomI": 2,
+      "bedroomII": 2,
+      "empty": 1,
+      "kitchen": 2,
+      "living_room": 2
+    },
+    "expected": {
+      "mixed": 0,
+      "empty": 1,
+      "living_room": 2,
+      "kitchen": 2,
+      "bedroomI": 2,
+      "bedroomII": 2
+    },
+    "counts_match": true
+  },
+  "day3": {
+    "actual": {
+      "empty": 6,
+      "mixed": 1,
+      "motion": 6
+    },
+    "expected": {
+      "mixed": 1,
+      "empty": 6,
+      "motion": 6
+    },
+    "counts_match": true
+  },
+  "day4": {
+    "actual": {
+      "empty": 1,
+      "mixed": 4,
+      "motion": 8
+    },
+    "expected": {
+      "mixed": 4,
+      "motion": 8,
+      "empty": 1
+    },
+    "counts_match": true
+  },
+  "day5": {
+    "actual": {
+      "empty": 1,
+      "mixed": 2,
+      "motion": 6
+    },
+    "expected": {
+      "mixed": 2,
+      "motion": 6,
+      "empty": 1
+    },
+    "counts_match": true
+  },
+  "day6": {
+    "actual": {
+      "empty": 1,
+      "mixed": 2,
+      "motion": 6
+    },
+    "expected": {
+      "mixed": 2,
+      "motion": 6,
+      "empty": 1
+    },
+    "counts_match": true
+  },
+  "day7": {
+    "actual": {
+      "empty": 1,
+      "motion": 6
+    },
+    "expected": {
+      "mixed": 0,
+      "empty": 1,
+      "motion": 6
+    },
+    "counts_match": true
+  },
+  "day8": {
+    "actual": {
+      "empty": 1,
+      "mixed": 2,
+      "motion": 6
+    },
+    "expected": {
+      "mixed": 2,
+      "empty": 1,
+      "motion": 6
+    },
+    "counts_match": true
+  },
+  "day9": {
+    "actual": {
+      "empty": 7,
+      "mixed": 2,
+      "motion": 8
+    },
+    "expected": {
+      "mixed": 2,
+      "empty": 7,
+      "motion": 8
+    },
+    "counts_match": true
+  }
+}

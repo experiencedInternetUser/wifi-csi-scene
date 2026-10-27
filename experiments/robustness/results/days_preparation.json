@@ -1,0 +1,17 @@
+{
+  "shape": [
+    4944,
+    52,
+    400
+  ],
+  "cap_per_recording": 24,
+  "input": "Atheros signed 10-bit imag then real, Fortran rx/tx/tone ordering; tx1rx1",
+  "all_recordings": 245,
+  "selected_recordings": 206,
+  "missing_days": [
+    17,
+    18,
+    19
+  ],
+  "cache_sha256": "e91db29d90e0ff2850e9d231b4a6f3f991b9e499f141b991d0e9613ba53c2605"
+}

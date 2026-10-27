@@ -1,0 +1,17 @@
+{
+  "binary_parser": [
+    {
+      "payload_bytes": 0,
+      "max_amplitude_error": 2.8545323743855988e-05
+    },
+    {
+      "payload_bytes": 44,
+      "max_amplitude_error": 2.8545323743855988e-05
+    }
+  ],
+  "features": {
+    "windows": 12,
+    "max_feature_error": 1.2344748467896238e-07,
+    "pca_orthogonality_error": 1.7881393432617188e-07
+  }
+}

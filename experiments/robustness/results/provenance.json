@@ -1,0 +1,11 @@
+{
+  "baseline_ref": "origin/baseline",
+  "baseline_sha": "d177c4638a72b0326b14f536764c9bf9b2f89aab",
+  "baseline_export_files": 43,
+  "export_matches_git": true,
+  "source_ref": "baldezh-6.1-sol-xhigh",
+  "source_sha": "70921001ece6ec831a24695697feccf483f0a510",
+  "upstream_presence_sha": "d5ad10c2572eed159d4e42cff725608a0b732970",
+  "upstream_presence_url": "https://github.com/bigtreeyanger/presence_detection_cnn",
+  "opera_paper_url": "https://doi.org/10.1038/s41597-022-01573-2"
+}

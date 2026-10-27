@@ -1,0 +1,5 @@
+# Additional reader dependencies; base ML dependencies are in ../../requirements.txt.
+h5py==3.16.0
+numba==0.67.0
+joblib
+threadpoolctl
