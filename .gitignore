@@ -1,5 +1,6 @@
 # Исходные архивы датасетов загружаются отдельно.
 /datasets/
+data
 
 # Окружение Python и временные файлы.
 .venv/
@@ -19,3 +20,7 @@ Thumbs.db
 # Тяжёлые массивы и веса остаются только локально.
 /experiments/results/*.npy
 /experiments/results/checkpoints/
+
+csi_cloud
+*.zip
+TODO.txt
