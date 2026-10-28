@@ -1,0 +1,8 @@
+{
+  "name": "logreg_scaled",
+  "policy": "noise",
+  "best_mean_ba": 0.9283974642104786,
+  "selected_mean_ba": 0.9273260556922617,
+  "external_results_used": false,
+  "plan_sha256": "25cdd628dcb81b705ad8975387700f9242aff063d21a87714d0b5b71233d08db"
+}

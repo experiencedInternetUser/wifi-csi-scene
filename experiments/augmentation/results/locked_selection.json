@@ -1,0 +1,10 @@
+{
+  "policy": "combined",
+  "criterion": "source-only mean development BA, tolerance 0.005, fixed complexity ordering",
+  "best_mean_ba": 0.9261947426841045,
+  "eligible": [
+    "combined"
+  ],
+  "external_results_used": false,
+  "plan_sha256": "6d5e772c77f9f6d2a651d56cb2062456ff19f2f84f16ebd37d4a0f131f805965"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "checkpoints": 165,
+  "source_only": true,
+  "gain_invariance_max_probability_error": 0.0,
+  "prediction_files": 231
+}

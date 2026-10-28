@@ -1,0 +1,47 @@
+{
+  "policies": [
+    "none",
+    "gain",
+    "spectral",
+    "noise",
+    "combined"
+  ],
+  "seeds": [
+    17,
+    42,
+    2026
+  ],
+  "epochs": 20,
+  "threshold": 0.5,
+  "stages": [
+    "cv_LOS-BQ",
+    "cv_LOS-PIFA",
+    "cv_NLOS-BQ",
+    "domain_holdout",
+    "all_wallhack"
+  ],
+  "expected_fits": 75,
+  "source_only": true,
+  "augmentation_probability": 0.5,
+  "gain": [
+    0.25,
+    16.0
+  ],
+  "spectral_knots": 6,
+  "spectral_log_std": 0.35,
+  "relative_noise_rms_max": 0.06,
+  "common_noise_power_fraction": 0.8,
+  "noise_fir_taps": 41,
+  "noise_fir_cutoff_hz": 10,
+  "noise_fir_window": "hann",
+  "source_commit": "048e33887f8c67313a68bf986b239ad99b92655a",
+  "hashes": {
+    "experiments/augmentation/protocol.md": "369d7af572e6dcf22e5bac3fab398538ba57a9a5e963c5f136801cb952428e3b",
+    "experiments/augmentation/augment.py": "959be3f7bdff8680555b33be3669092c9b75583f778a5f761b53eaa1a73a2690",
+    "experiments/augmentation/run.py": "6c815df66f6f85526f5ab7a388632c1850f1126f8754304c3554889b0b083bf2",
+    "experiments/models.py": "638ffc12896828142a4ec82d158390d36c91b0265cd545531d9b4aa2d64c3be9",
+    "experiments/final_motion/pipeline.py": "2ad646a21afb0313bb56959b5efeb63d2ac217f4239b4934195be8344d9bf1cd",
+    "experiments/motion_results/windows.csv": "eaf32bbf1be73f7baa9f196f2bd05ff4785630c799119df88eab43f0c7ab2ac1",
+    "experiments/motion_results/amplitudes.npy": "8e62b68523e4d832505ab2795dd5459778d7a02cc90e184637ff533198276aab"
+  }
+}

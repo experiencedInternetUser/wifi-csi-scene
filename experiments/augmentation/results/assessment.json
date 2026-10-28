@@ -1,0 +1,62 @@
+{
+  "selected_source_only": "combined",
+  "decisions": [
+    {
+      "policy": "combined",
+      "days_ba_gain": 0.41357971841704744,
+      "days_fpr_reduction": 0.9215277777777777,
+      "days_practical_gain": true,
+      "strict_preservation": false,
+      "tolerant_preservation": false,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "policy": "gain",
+      "days_ba_gain": 0.3107068112633181,
+      "days_fpr_reduction": 0.9381944444444444,
+      "days_practical_gain": true,
+      "strict_preservation": false,
+      "tolerant_preservation": false,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "policy": "noise",
+      "days_ba_gain": -0.0018201420598680795,
+      "days_fpr_reduction": 0.0009259259259258856,
+      "days_practical_gain": false,
+      "strict_preservation": false,
+      "tolerant_preservation": true,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "policy": "spectral",
+      "days_ba_gain": -0.004096905124302275,
+      "days_fpr_reduction": 0.0004629629629628873,
+      "days_practical_gain": false,
+      "strict_preservation": false,
+      "tolerant_preservation": false,
+      "combined_strict": false,
+      "combined_tolerance": false
+    }
+  ],
+  "selected": {
+    "policy": "combined",
+    "days_ba_gain": 0.41357971841704744,
+    "days_fpr_reduction": 0.9215277777777777,
+    "days_practical_gain": true,
+    "strict_preservation": false,
+    "tolerant_preservation": false,
+    "combined_strict": false,
+    "combined_tolerance": false
+  },
+  "thresholds": {
+    "days_ba_gain": 0.05,
+    "days_fpr_reduction": 0.1,
+    "no_auc_decrease": true
+  },
+  "target_training": false,
+  "target_threshold_tuning": false
+}

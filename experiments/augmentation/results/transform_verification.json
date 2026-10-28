@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "policies": [
+    {
+      "policy": "none",
+      "unchanged_fraction": 1.0,
+      "max_channel_mean": 3.33786012163273e-08
+    },
+    {
+      "policy": "gain",
+      "unchanged_fraction": 0.484375,
+      "max_channel_mean": 3.2424927098873013e-07
+    },
+    {
+      "policy": "spectral",
+      "unchanged_fraction": 0.484375,
+      "max_channel_mean": 5.7220457705398076e-08
+    },
+    {
+      "policy": "noise",
+      "unchanged_fraction": 0.484375,
+      "max_channel_mean": 4.768371297814156e-08
+    },
+    {
+      "policy": "combined",
+      "unchanged_fraction": 0.484375,
+      "max_channel_mean": 6.103515488575795e-07
+    }
+  ],
+  "fir_energy_fraction_above20": 7.301435343017567e-08,
+  "noise_relative_rms_max": 0.05996401235461235
+}

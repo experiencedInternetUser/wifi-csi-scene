@@ -1,0 +1,28 @@
+{
+  "models": [
+    "logreg_scaled",
+    "logreg_pca8"
+  ],
+  "policies": [
+    "none",
+    "gain",
+    "spectral",
+    "noise",
+    "combined"
+  ],
+  "seeds": [
+    17,
+    42,
+    2026
+  ],
+  "copies": 2,
+  "copy_weight": 0.5,
+  "target_training": false,
+  "expected_logreg_fits": 150,
+  "expected_lightgbm_fits": 15,
+  "hashes": {
+    "experiments/augmentation/classical.py": "6cadd6f9a5cb2cafba2a5edd0f6c450457986607fbfba26a60ccc6a0e039c2f9",
+    "experiments/augmentation/classical_protocol.md": "a088c9ed14f389c2d5c61b17af9355da7135b66148cd9d064749bdafd848517e"
+  },
+  "tcn_plan_sha256": "6d5e772c77f9f6d2a651d56cb2062456ff19f2f84f16ebd37d4a0f131f805965"
+}

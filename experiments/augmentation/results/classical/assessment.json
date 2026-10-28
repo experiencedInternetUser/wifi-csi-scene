@@ -1,0 +1,111 @@
+{
+  "selected_source_only": {
+    "name": "logreg_scaled",
+    "policy": "noise",
+    "best_mean_ba": 0.9283974642104786,
+    "selected_mean_ba": 0.9273260556922617,
+    "external_results_used": false,
+    "plan_sha256": "25cdd628dcb81b705ad8975387700f9242aff063d21a87714d0b5b71233d08db"
+  },
+  "decisions": [
+    {
+      "name": "logreg_scaled",
+      "policy": "gain",
+      "days_ba_gain": 0.0,
+      "days_fpr_reduction": 0.0,
+      "days_practical_gain": false,
+      "strict_preservation": true,
+      "tolerant_preservation": true,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "name": "logreg_scaled",
+      "policy": "spectral",
+      "days_ba_gain": 0.007291666666666696,
+      "days_fpr_reduction": 0.014583333333333393,
+      "days_practical_gain": false,
+      "strict_preservation": false,
+      "tolerant_preservation": false,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "name": "logreg_scaled",
+      "policy": "noise",
+      "days_ba_gain": 0.15367675038051742,
+      "days_fpr_reduction": 0.3145833333333333,
+      "days_practical_gain": true,
+      "strict_preservation": false,
+      "tolerant_preservation": false,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "name": "logreg_scaled",
+      "policy": "combined",
+      "days_ba_gain": 0.16171042617960407,
+      "days_fpr_reduction": 0.33055555555555555,
+      "days_practical_gain": true,
+      "strict_preservation": false,
+      "tolerant_preservation": false,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "name": "logreg_pca8",
+      "policy": "gain",
+      "days_ba_gain": 0.0,
+      "days_fpr_reduction": 0.0,
+      "days_practical_gain": false,
+      "strict_preservation": true,
+      "tolerant_preservation": true,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "name": "logreg_pca8",
+      "policy": "spectral",
+      "days_ba_gain": 0.009143518518518468,
+      "days_fpr_reduction": 0.018287037037037046,
+      "days_practical_gain": false,
+      "strict_preservation": false,
+      "tolerant_preservation": false,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "name": "logreg_pca8",
+      "policy": "noise",
+      "days_ba_gain": 0.10671771943176056,
+      "days_fpr_reduction": 0.21828703703703706,
+      "days_practical_gain": false,
+      "strict_preservation": false,
+      "tolerant_preservation": false,
+      "combined_strict": false,
+      "combined_tolerance": false
+    },
+    {
+      "name": "logreg_pca8",
+      "policy": "combined",
+      "days_ba_gain": 0.11818398021308973,
+      "days_fpr_reduction": 0.24236111111111108,
+      "days_practical_gain": false,
+      "strict_preservation": false,
+      "tolerant_preservation": false,
+      "combined_strict": false,
+      "combined_tolerance": false
+    }
+  ],
+  "selected": {
+    "name": "logreg_scaled",
+    "policy": "noise",
+    "days_ba_gain": 0.15367675038051742,
+    "days_fpr_reduction": 0.3145833333333333,
+    "days_practical_gain": true,
+    "strict_preservation": false,
+    "tolerant_preservation": false,
+    "combined_strict": false,
+    "combined_tolerance": false
+  }
+}

@@ -1,0 +1,6 @@
+name,policy,stage,cluster,clusters,valid_repeats,ba_delta_lo,ba_delta_hi
+logreg_scaled,noise,wallhack_holdout,group_id,11,1265,-0.02485492188101297,0.008196721311475308
+logreg_scaled,noise,3do_final,group_id,23,2000,-0.006493620026088762,-0.0003003717182393289
+logreg_scaled,noise,days_zero_shot,group_id,206,2000,0.10634439187206575,0.1789234305554911
+logreg_scaled,noise,days_zero_shot,day,21,2000,0.08483956381595693,0.2074189252578965
+logreg_scaled,noise,opera_zero_shot,experiment,22,1970,-0.10112030400081343,0.0015701159591194323

@@ -1,0 +1,9 @@
+name,stage,max_probability_difference,changed_decisions
+logreg_scaled,wallhack_holdout,1.5543122344752192e-15,0
+logreg_scaled,3do_final,3.907985046680551e-14,0
+logreg_scaled,days_zero_shot,4.218847493575595e-14,0
+logreg_scaled,opera_zero_shot,1.1712852909795402e-13,0
+logreg_pca8,wallhack_holdout,2.90878432451791e-14,0
+logreg_pca8,3do_final,3.164135620181696e-15,0
+logreg_pca8,days_zero_shot,1.7763568394002505e-15,0
+logreg_pca8,opera_zero_shot,5.218048215738236e-15,0

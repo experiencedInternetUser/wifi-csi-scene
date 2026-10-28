@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "checkpoints": 75,
+  "max_cached_vs_raw_probability_error": 0.0,
+  "prediction_files": 105,
+  "source_only": true,
+  "source_projection_verified": true
+}
