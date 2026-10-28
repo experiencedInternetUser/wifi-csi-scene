@@ -1,7 +1,8 @@
 """Single preprocessing pipeline for every dataset and model (stage 2 template).
 
-    Recording -> amplitude -> resample to 100 Hz (split at gaps) -> remove impulsive packets
-              -> low-pass -> windows -> per-window normalization -> [N, A, S, W] (+ window labels)
+    Recording -> amplitude -> split at gaps -> remove impulsive packets (native rate)
+              -> anti-alias + resample to 100 Hz -> low-pass -> windows -> per-window normalization
+              -> [N, A, S, W] (+ window labels)
     then, fitted on train only: Standardizer; or hardware-agnostic window features for simple models.
 
 Presets reproduce the variants compared in stage 2 (docs/RESULTS_BINARY.md):
@@ -37,7 +38,7 @@ class PreprocConfig:
     fs: float = FS                 # target packet rate after resampling
     max_gap_s: float = 0.05        # larger gaps split the recording into segments
     impulses: bool = False         # interpolate impulsive (drop-out) packets
-    impulse_win: int = 51          # median window, packets (~0.5 s)
+    impulse_win_s: float = 0.5     # median window, seconds (51 packets at 100 Hz)
     impulse_tol: float = 0.3       # relative deviation of packet mean amplitude
     lowpass_hz: float | None = None
     norm: str = "none"             # none | centered | relative | scaled
@@ -67,12 +68,35 @@ def segments(t: np.ndarray, y: np.ndarray, max_gap_s: float) -> list[tuple[int, 
     return [(int(s), int(e)) for s, e in zip(b[:-1], b[1:]) if e - s > 1]
 
 
+def native_rate(t: np.ndarray) -> float:
+    """Mean packet rate of a segment (robust to quantized timestamps, unlike the median interval)."""
+    return (len(t) - 1) / max(float(t[-1] - t[0]), 1e-9)
+
+
 def resample(t: np.ndarray, x: np.ndarray, fs: float) -> tuple[np.ndarray, np.ndarray]:
-    """Linear interpolation of x [T, ...] onto a uniform grid starting at t[0]."""
-    grid = t[0] + np.arange(int(np.floor((t[-1] - t[0]) * fs)) + 1) / fs
+    """Resample x [T, ...] of one continuous segment onto a uniform grid at fs, starting at t[0].
+
+    If the native packet rate is well above fs (Intel 5300 at 1-1.6 kHz, Nexmon ~170 Hz), the signal is
+    first put on a uniform native-rate grid and low-passed at 0.4*fs (anti-aliasing), otherwise
+    everything above fs/2 would fold into the working band.
+    """
     flat = x.reshape(len(t), -1)
-    out = np.stack([np.interp(grid, t, flat[:, j]) for j in range(flat.shape[1])], axis=1)
-    return grid, out.reshape((len(grid),) + x.shape[1:]).astype(np.float32)
+    fs_native = native_rate(t)
+    grid = t[0] + np.arange(int(np.floor((t[-1] - t[0]) * fs)) + 1) / fs
+    out = np.empty((len(grid), flat.shape[1]), np.float32)
+    if fs_native > 1.5 * fs:
+        # channel by channel: a [T_native, 270] float64 intermediate would not fit in memory
+        g = t[0] + np.arange(int(np.floor((t[-1] - t[0]) * fs_native)) + 1) / fs_native
+        sos = butter(8, 0.4 * fs, btype="lowpass", fs=fs_native, output="sos")
+        zi0 = sosfilt_zi(sos)
+        for j in range(flat.shape[1]):
+            u = np.interp(g, t, flat[:, j].astype(np.float64))
+            u, _ = sosfilt(sos, u, zi=zi0 * u[0])
+            out[:, j] = np.interp(grid, g, u)
+    else:
+        for j in range(flat.shape[1]):
+            out[:, j] = np.interp(grid, t, flat[:, j].astype(np.float64))
+    return grid, out.reshape((len(grid),) + x.shape[1:])
 
 
 def remove_impulses(amp: np.ndarray, win: int, tol: float) -> tuple[np.ndarray, np.ndarray]:
@@ -123,10 +147,13 @@ def preprocess_recording(rec: Recording, cfg: PreprocConfig = DEFAULT):
         t, amp, lab = rec.t[s:e], rec.amp[s:e], rec.y[s:e]
         if (t[-1] - t[0]) * cfg.fs < cfg.window:
             continue
-        grid, a = resample(t, amp, cfg.fs)
-        bad = np.zeros(len(a), dtype=bool)
+        # impulses are removed at the native packet rate, before anti-aliasing would smear them
+        bad_native = np.zeros(len(t), dtype=bool)
         if cfg.impulses:
-            a, bad = remove_impulses(a, cfg.impulse_win, cfg.impulse_tol)
+            win = max(3, int(round(cfg.impulse_win_s * native_rate(t))) | 1)
+            amp, bad_native = remove_impulses(amp, win, cfg.impulse_tol)
+        grid, a = resample(t, amp, cfg.fs)
+        bad = np.interp(grid, t, bad_native.astype(float)) > 0
         if cfg.lowpass_hz:
             a = lowpass(a, cfg.lowpass_hz, cfg.fs)
         for k in range(0, len(a) - cfg.window + 1, cfg.step):

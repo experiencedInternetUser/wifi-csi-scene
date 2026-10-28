@@ -3,13 +3,17 @@ from __future__ import annotations
 
 import numpy as np
 
-GLOBAL_LABELS = ["empty", "walk", "walk_wave", "sit", "lie"]
+GLOBAL_LABELS = ["empty", "walk", "walk_wave", "sit", "lie",
+                 # OPERAnet: actions (transitions), not postures, plus a person at rest
+                 "sit_down", "stand_up", "lie_down", "stand_from_lie", "body_rotate", "still"]
 LABEL_ID = {name: i for i, name in enumerate(GLOBAL_LABELS)}
 
 # dataset class id -> global label name
 DATASET_TO_GLOBAL = {
     "wallhack": {0: "empty", 1: "walk", 2: "walk_wave"},
     "3do": {0: "empty", 1: "walk", 2: "sit", 3: "lie"},
+    "operanet": {0: "empty", 1: "walk", 2: "sit_down", 3: "stand_up", 4: "lie_down", 5: "stand_from_lie",
+                 6: "body_rotate", 7: "still"},
 }
 
 
